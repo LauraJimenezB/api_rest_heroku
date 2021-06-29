@@ -151,7 +151,11 @@ export class ProductsController {
     @Request() req,
     @Param('id') bookId: number,
   ): Promise<AttachmentDto> {
-    return this.productsService.uploadImagesToBook(bookId, req.headers['content-type'], params);
+    return this.productsService.uploadImagesToBook(
+      bookId,
+      req.headers['content-type'],
+      params,
+    );
   }
 
   @Get('images/:id')

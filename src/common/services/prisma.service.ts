@@ -31,5 +31,5 @@ export class PrismaService
     } finally {
       await this.$disconnect();
     }
-  };
+  }
 }

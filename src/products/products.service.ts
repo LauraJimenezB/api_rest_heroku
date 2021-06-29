@@ -19,7 +19,10 @@ import { ReadProductEntity } from './entities/read-product.entity';
 
 @Injectable()
 export class ProductsService {
-  constructor(private prisma: PrismaService, private attachmentsService: AttachmentsService) {}
+  constructor(
+    private prisma: PrismaService,
+    private attachmentsService: AttachmentsService,
+  ) {}
   //private attachmentsService: AttachmentsService,
 
   async getAll(

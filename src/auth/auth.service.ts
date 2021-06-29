@@ -78,7 +78,7 @@ export class AuthService {
         active: false,
       },
     });
-    return {message: 'User has logged out'}
+    return { message: 'User has logged out' };
   }
 
   async signup(user: CreateUserDto): Promise<VerifyEmailDto> {
